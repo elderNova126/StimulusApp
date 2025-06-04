@@ -1,0 +1,15 @@
+version: 1.3
+pr_review:
+  confidence_threshold: 0.9
+  auto_review_enabled: true
+  rules:
+    - 'Code should be DRY (Don\'t Repeat Yourself)'
+    - 'There should be no secrets or credentials in the code'
+    - 'Complicated code needs comments'
+    - 'Code should follow consistent style guidelines'
+    - 'Performance considerations should be addressed (e.g., no unnecessary loops, optimized queries)'
+    - 'No potential security vulnerabilities (e.g., SQL injection, XSS)'
+ignore:
+   - '.github/workflows/*.yaml'
+  - '**/dist'
+  - 'frontend-app/coverage'

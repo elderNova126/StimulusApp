@@ -1,0 +1,17 @@
+trigger:
+  branches:
+    exclude:
+      - '*'
+      
+resources:
+  - repo: self
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:  
+  - task: PublishPipelineArtifact@1
+    displayName: Pubish build
+    inputs:
+      artifactName: "app-build"
+      path: "./maintenance-screen"

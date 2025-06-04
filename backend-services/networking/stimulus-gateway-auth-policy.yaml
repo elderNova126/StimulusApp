@@ -1,0 +1,15 @@
+apiVersion: authentication.istio.io/v1alpha1
+kind: Policy
+metadata:
+  name: ingressgateway
+  namespace: istio-system
+spec:
+  targets:
+  - name: istio-ingressgateway
+  peers:
+  - mtls: {}
+  origins:
+  - jwt:
+      issuer: "https://stimulusdev.b2clogin.com/fe441d52-c345-4966-8734-412dc26ecc31/v2.0/"
+      jwksUri: "https://stimulusdev.b2clogin.com/stimulusdev.onmicrosoft.com/discovery/v2.0/keys?p=b2c_1_stimulus"
+  principalBinding: USE_ORIGIN

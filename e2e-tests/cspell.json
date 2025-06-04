@@ -1,0 +1,34 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "accesstoken",
+        "Akorn",
+        "archivo",
+        "chakra",
+        "loggedin",
+        "mochawesome",
+        "rapidapi",
+        "stepdefinitions",
+        "stimuluslogo",
+        "tabpanel",
+        "testid",
+        "testpdf",
+        "usermanagement",
+        "valuenow",
+        "JIDAN"
+    ],
+    "includeRegExpList": [
+        "/('[^']*'|\"[^\"]*\")/"
+    ],
+    "ignoreRegExpList": [
+        "'X-RapidAPI-Key': '[A-Za-z0-9]+'",
+        "VALIDATETEXT: '.+'",
+        "SAVECHANGES_BTN: '.+'"
+    ],
+    "ignorePaths": [
+        "coverage/**/*",
+        "dist/**/*",
+        "node_modules/**/*"
+    ]
+}

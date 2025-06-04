@@ -1,0 +1,36 @@
+{
+  "npmScope": "stimulus-cloud",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint", "package"]
+      }
+    }
+  },
+  "projects": {
+    "controller": {
+      "implicitDependencies": []
+    },
+    "controller-proto": {
+      "implicitDependencies": []
+    },
+    "user-api": {
+      "implicitDependencies": []
+    },
+    "frontend-app": {
+      "implicitDependencies": []
+    }
+  },
+  "affected": {
+    "defaultBase": "uat"
+  }
+}

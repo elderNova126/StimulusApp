@@ -1,0 +1,8 @@
+node_modules
+reports
+tests
+.DS_Store
+.env
+
+downloads
+cypress/screenshots

@@ -1,0 +1,3 @@
+[2K[1G[2m$ rimraf dist codegen && sh tools/generate.sh[22m
+tools/generate.sh: 10: [[: not found
+[2K[1G[2m$ tsc[22m

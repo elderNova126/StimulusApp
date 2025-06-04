@@ -1,0 +1,240 @@
+.pac-container {
+  z-index: 10000;
+}
+
+.App {
+  min-height: calc(100vh - 68px);
+  position: relative;
+  padding-bottom: 68px;
+}
+
+.MuiSnackbarContent-message {
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  /* top: 2px; */
+  position: absolute;
+  margin: 0px;
+}
+
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.file:hover + label,
+.file:focus + label {
+  transform: scale(1.02);
+}
+.file:focus + label {
+  outline: 1px solid #000;
+  outline: -webkit-focus-ring-color auto 2px;
+}
+
+.file-input label {
+  display: block;
+  position: relative;
+  border-radius: 15px;
+  border: 0.5px solid #00000077;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+@keyframes item-focus {
+  0% {
+    border: 2px solid white;
+  }
+  25% {
+    border: 2px solid #1bb062;
+  }
+  25% {
+    border: 2px solid white;
+  }
+  75% {
+    border: 2px solid #1bb062;
+  }
+  100% {
+    border: 2px solid white;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 18px;
+}
+
+.switch.small {
+  width: 26px;
+  height: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider.small:before {
+  height: 11px;
+  width: 11px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2a2a28;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2a2a28;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(9px);
+  -ms-transform: translateX(9px);
+  transform: translateX(9px);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+#score-indicator {
+  transition: transform 1s ease;
+}
+
+html {
+  scrollbar-face-color: #c7ebd9;
+  scrollbar-base-color: #b0e2c8;
+  scrollbar-3dlight-color: #fff;
+  scrollbar-highlight-color: #fff;
+  scrollbar-track-color: #fff;
+  scrollbar-arrow-color: #fff;
+  scrollbar-shadow-color: #fff;
+  scrollbar-dark-shadow-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+/* ::-webkit-scrollbar-button {  background-color: #fff; } */
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+  /* background-color: #d5eee1aa; */
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #c4c4c4;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+  background-color: #fff;
+}
+.powerbi-report {
+  height: 700px;
+  max-height: 700px;
+  padding: 1rem;
+}
+
+.fade {
+  -webkit-mask-image: linear-gradient(180deg, #000 90%, transparent);
+}
+
+.fadeCompare {
+  mask-image: linear-gradient(to right, black calc(100% - 32px), transparent 100%);
+}
+
+.modalUpload[type='file']::file-selector-button {
+  border: 1.8px solid #2a8d5d;
+  color: #12814b;
+  font-weight: 550;
+  padding: 6px 15px 6px 15px;
+  margin-right: 20px;
+  border-radius: 8px;
+  background-color: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.modalUpload[type='file']::file-selector-button:hover {
+  background-color: #c8e6d9;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.parent .child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.companyRow .deleteIconCompany {
+  visibility: hidden;
+}
+
+.companyRow:hover .deleteIconCompany {
+  visibility: visible;
+}
+
+.actionAddIcon {
+  visibility: hidden;
+}
+
+.companyNameRow {
+  white-space: 'nowrap';
+}
+.companyNameRow:hover .actionAddIcon {
+  visibility: visible;
+}
+
+.scrollBarComments::-webkit-scrollbar-track-piece {
+  background-color: #fcfbfb !important;
+}
+
+.scrollBarInvites::-webkit-scrollbar-track-piece {
+  background-color: #f6f6f6 !important;
+}
+
+.vertical-modebar .modebar .modebar-group a {
+  display: inline-block;
+}

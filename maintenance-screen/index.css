@@ -1,0 +1,51 @@
+body{
+    font-family: Poppins;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: 80px;
+    }
+  
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    } 
+
+.container{
+    display: flex;
+    }
+  
+            
+.leftSide{
+   padding: 130px;
+   width: 50vw;
+   height: 100vh;
+   background: #E9F8ED;
+    }
+        
+.rightSide{
+    padding: 130px;
+    width: 50vw;
+    height: 100vh;
+    }
+
+.logo{
+    width: 150px;
+}
+
+.bgChart{
+    margin-top: 3rem;
+    position: absolute;
+    width: 40vw;
+}
+
+.human{
+    margin: 13rem 0 0 2rem;
+    position: relative;
+    width: 15vw;
+}

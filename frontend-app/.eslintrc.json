@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "extends": [
+      "eslint:recommended",
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended"
+  ],
+  "rules": {
+    // FIXME: Remove this rule exception when ready
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["node_modules/**/*", "cypress/**/*", "build/**/*"]
+}

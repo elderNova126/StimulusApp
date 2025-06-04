@@ -1,0 +1,17 @@
+{
+  "name": "stimulus-cloud",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "start.dev": "npx nx run-many --target=start.dev --projects=controller,user-api,frontend-app --parallel",
+    "install-dev": "npx nx run-many --target=install-dev --projects=controller-proto,controller,user-api,frontend-app --parallel",
+    "proto-update": "npx nx build controller-proto && npx nx run-many --target=proto-update --projects=controller,user-api --parallel",
+    "sonar-scan": "sonar-scanner -Dsonar.login=$SONAR_TOKEN"
+  },
+  "dependencies": {
+    "nx": "^20.4.3"
+  },
+  "devDependencies": {
+    "sonar-scanner": "^3.1.0"
+  }
+}

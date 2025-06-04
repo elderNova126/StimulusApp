@@ -1,0 +1,46 @@
+[2K[1G[1myarn run v1.22.22[22m
+[2K[1G[2m$ PORT=3006 react-scripts start[22m
+[34mℹ[39m [90m｢wds｣[39m: Project is running at http://192.168.191.128/
+[34mℹ[39m [90m｢wds｣[39m: webpack output is served from 
+[34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /home/nathan/stimulus-new/stimulus-cloud/frontend-app/public
+[34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /
+[2J[3J[H[36mStarting the development server...[39m
+[36m[39m
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:79:19)
+    at Object.createHash (node:crypto:139:10)
+    at module.exports (/home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/webpack/lib/NormalModule.js:503:5
+    at /home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/webpack/lib/NormalModule.js:358:12
+    at /home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+/home/nathan/stimulus-new/stimulus-cloud/frontend-app/node_modules/react-scripts/scripts/start.js:19
+  throw err;
+  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+[90m    at new Hash (node:internal/crypto/hash:79:19)[39m
+[90m    at Object.createHash (node:crypto:139:10)[39m
+    at module.exports [90m(/home/nathan/stimulus-new/stimulus-cloud/frontend-app/[39mnode_modules/[4mwebpack[24m/lib/util/createHash.js:135:53[90m)[39m
+    at NormalModule._initBuildHash [90m(/home/nathan/stimulus-new/stimulus-cloud/frontend-app/[39mnode_modules/[4mwebpack[24m/lib/NormalModule.js:417:16[90m)[39m
+    at [90m/home/nathan/stimulus-new/stimulus-cloud/frontend-app/[39mnode_modules/[4mwebpack[24m/lib/NormalModule.js:452:10
+    at [90m/home/nathan/stimulus-new/stimulus-cloud/frontend-app/[39mnode_modules/[4mwebpack[24m/lib/NormalModule.js:323:13
+    at [90m/home/nathan/stimulus-new/stimulus-cloud/frontend-app/[39mnode_modules/[4mloader-runner[24m/lib/LoaderRunner.js:367:11
+    at [90m/home/nathan/stimulus-new/stimulus-cloud/frontend-app/[39mnode_modules/[4mloader-runner[24m/lib/LoaderRunner.js:233:18
+    at context.callback [90m(/home/nathan/stimulus-new/stimulus-cloud/frontend-app/[39mnode_modules/[4mloader-runner[24m/lib/LoaderRunner.js:111:13[90m)[39m
+    at [90m/home/nathan/stimulus-new/stimulus-cloud/frontend-app/[39mnode_modules/[4mreact-scripts[24m/node_modules/[4mbabel-loader[24m/lib/index.js:59:103 {
+  opensslErrorStack: [
+    [32m'error:03000086:digital envelope routines::initialization error'[39m,
+    [32m'error:0308010C:digital envelope routines::unsupported'[39m
+  ],
+  library: [32m'digital envelope routines'[39m,
+  reason: [32m'unsupported'[39m,
+  code: [32m'ERR_OSSL_EVP_UNSUPPORTED'[39m
+}
+
+Node.js v22.14.0
+[2K[1G[31merror[39m Command failed with exit code 1.
+[2K[1G[34minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/run[22m for documentation about this command.

@@ -1,0 +1,24 @@
+[2K[1G[2m$ rm -r node_modules/controller-proto/ && yarn install --check-files[22m
+[2K[1G[2m[1/4][22m Resolving packages...
+[2K[1G[2m[2/4][22m Fetching packages...
+[2K[1G[33mwarning[39m Pattern ["cors@latest"] is trying to unpack in the same destination "/home/nathan/.cache/yarn/v6/npm-cors-2.8.5-eac11da51592dd86b9f06f6e7ac293b3df875d29-integrity/node_modules/cors" as pattern ["cors@2.8.5"]. This could result in non-deterministic behavior, skipping.
+[2K[1G[33mwarning[39m Pattern ["object-assign@latest"] is trying to unpack in the same destination "/home/nathan/.cache/yarn/v6/npm-object-assign-4.1.1-2109adc7965887cfc05cbbd442cac8bfbb360863-integrity/node_modules/object-assign" as pattern ["object-assign@^4","object-assign@^4.1.1","object-assign@^4.1.1","object-assign@^4.0.1","object-assign@^4","object-assign@^4.1.0"]. This could result in non-deterministic behavior, skipping.
+[2K[1G[33mwarning[39m bootstrap.native@5.1.2: The engine "pnpm" appears to be invalid.
+[2K[1G[33mwarning[39m @thednp/event-listener@2.0.8: The engine "pnpm" appears to be invalid.
+[2K[1G[33mwarning[39m @thednp/position-observer@1.0.7: The engine "pnpm" appears to be invalid.
+[2K[1G[33mwarning[39m @thednp/shorty@2.0.10: The engine "pnpm" appears to be invalid.
+[2K[1G[2m[3/4][22m Linking dependencies...
+[2K[1G[33mwarning[39m " > @nestjs/config@0.2.4" has incorrect peer dependency "@nestjs/common@^6.10.0".
+[2K[1G[33mwarning[39m " > @nestjs/terminus@8.1.1" has incorrect peer dependency "@nestjs/common@8.x".
+[2K[1G[33mwarning[39m " > @nestjs/terminus@8.1.1" has incorrect peer dependency "@nestjs/core@8.x".
+[2K[1G[33mwarning[39m " > @nestjs/terminus@8.1.1" has incorrect peer dependency "rxjs@7.x".
+[2K[1G[33mwarning[39m " > @nestjs/typeorm@9.0.1" has incorrect peer dependency "@nestjs/common@^8.0.0 || ^9.0.0".
+[2K[1G[33mwarning[39m " > @nestjs/typeorm@9.0.1" has incorrect peer dependency "@nestjs/core@^8.0.0 || ^9.0.0".
+[2K[1G[33mwarning[39m " > @nestjs/typeorm@9.0.1" has incorrect peer dependency "rxjs@^7.2.0".
+[2K[1G[33mwarning[39m " > @nestjs/typeorm@9.0.1" has incorrect peer dependency "typeorm@^0.3.0".
+[2K[1G[33mwarning[39m " > eslint-plugin-jsdoc@32.3.4" has incorrect peer dependency "eslint@^6.0.0 || ^7.0.0".
+[2K[1G[33mwarning[39m " > nestjs-ddtrace@3.0.4" has incorrect peer dependency "@nestjs/common@^9.0.0".
+[2K[1G[33mwarning[39m " > nestjs-ddtrace@3.0.4" has incorrect peer dependency "@nestjs/core@^9.0.0".
+[2K[1G[33mwarning[39m Workspaces can only be enabled in private projects.
+[2K[1G[33mwarning[39m Workspaces can only be enabled in private projects.
+[2K[1G[2m[4/4][22m Building fresh packages...

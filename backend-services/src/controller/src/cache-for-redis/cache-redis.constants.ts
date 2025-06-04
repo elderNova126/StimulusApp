@@ -1,0 +1,10 @@
+export enum DefaultTimesForCache {
+  FIVE_SECONDS = 5,
+  FORTY_SECONDS = 40,
+  ONE_MINUTE = 60,
+  TEN_MINUTES = 600,
+  ONE_HOUR = 3600,
+  ONE_DAY = 86400,
+  ONE_WEEK = 604800,
+  ONE_MONTH = 2592000,
+}

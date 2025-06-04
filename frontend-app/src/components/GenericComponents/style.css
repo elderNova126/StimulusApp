@@ -1,0 +1,21 @@
+.picker {
+  width: 100%;
+  padding: 5px 5px 5px 20px;
+  border: 1px solid #848484;
+  border-radius: 4px;
+}
+
+.picker:focus {
+  border: 1px solid transparent;
+  outline: #3182ce solid 2px;
+  transition: outline-color 0.3s ease-out;
+}
+/* on disble pikcer to #c9cac6 */
+.picker:disabled {
+  border: 1px solid #c9cac6;
+  color: #c9cac6;
+}
+
+div.overflowHidden p.content-trimmer {
+  overflow-y: hidden !important;
+}

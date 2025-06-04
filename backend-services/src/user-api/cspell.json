@@ -1,0 +1,27 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+       "apikey",
+       "CAGR",
+       "codegen",
+       "compodoc",
+       "ddtrace",
+       "GNEWS",
+       "ingestor",
+       "jwks",
+       "LGBTQ",
+       "msword",
+       "nestjs",
+       "proto",
+       "superadmin"
+    ],
+    "includeRegExpList": [
+        "/('[^']*'|\"[^\"]*\")/"
+    ],
+    "ignorePaths": [
+        "coverage/**/*",
+        "dist/**/*",
+        "node_modules/**/*"
+    ]
+}

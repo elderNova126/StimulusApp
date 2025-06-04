@@ -1,0 +1,170 @@
+{
+  "ProjectNotesResponseUnion": [
+    "ProjectNotesResponse",
+    "ErrorResponse"
+  ],
+  "ContactResponseUnion": [
+    "ContactResponse",
+    "ErrorResponse"
+  ],
+  "LocationResponseUnion": [
+    "LocationResponse",
+    "ErrorResponse"
+  ],
+  "ProductResponseUnion": [
+    "ProductResponse",
+    "ErrorResponse"
+  ],
+  "CertificationResultResponse": [
+    "CertificationResult",
+    "ErrorResponse"
+  ],
+  "InsuranceResponseUnion": [
+    "InsuranceResponse",
+    "ErrorResponse"
+  ],
+  "CompanyNotesResponseUnion": [
+    "CompanyNotesResponse",
+    "ErrorResponse"
+  ],
+  "ContingencyResponseUnion": [
+    "ContingencyResponse",
+    "ErrorResponse"
+  ],
+  "StimulusScoreResponseUnion": [
+    "StimulusScoreResponse",
+    "ErrorResponse"
+  ],
+  "ProjectsResponseUnion": [
+    "ProjectsResponse",
+    "ErrorResponse"
+  ],
+  "CompaniesResponseUnion": [
+    "CompaniesResponse",
+    "ErrorResponse"
+  ],
+  "EventsResponseUnion": [
+    "EventsResponse",
+    "ErrorResponse"
+  ],
+  "ScenariosResponseUnion": [
+    "ScenariosResponse",
+    "ErrorResponse"
+  ],
+  "ProjectCompanyResponseUnion": [
+    "ProjectCompanyResponse",
+    "ErrorResponse"
+  ],
+  "AccountInfoResponse": [
+    "AccountInfo",
+    "ErrorResponse"
+  ],
+  "SavedSearchResponseUnion": [
+    "SavedSearchResponse",
+    "ErrorResponse"
+  ],
+  "NotificationResponseUnion": [
+    "NotificationResponse",
+    "ErrorResponse"
+  ],
+  "BlobResultResponse": [
+    "BlobResult",
+    "ErrorResponse"
+  ],
+  "ProjectAttachmentsResponseUnion": [
+    "ProjectAttachmentResponse",
+    "ErrorResponse"
+  ],
+  "AssetsResponseUnion": [
+    "AssetResponse",
+    "ErrorResponse"
+  ],
+  "EvaluationResponseUnion": [
+    "Evaluation",
+    "ErrorResponse"
+  ],
+  "CompanyEvaluationNotesResponseUnion": [
+    "CompanyEvaluationNotesResponse",
+    "ErrorResponse"
+  ],
+  "ActionResponse": [
+    "BaseResponse",
+    "ErrorResponse"
+  ],
+  "TenantCompanyRelationResponseUnion": [
+    "TenantCompanyRelationResponse",
+    "ErrorResponse"
+  ],
+  "CompanyResponse": [
+    "Company",
+    "ErrorResponse"
+  ],
+  "ContactUnion": [
+    "Contact",
+    "ErrorResponse"
+  ],
+  "ProductUnion": [
+    "Product",
+    "ErrorResponse"
+  ],
+  "LocationUnion": [
+    "Location",
+    "ErrorResponse"
+  ],
+  "InsuranceUnion": [
+    "Insurance",
+    "ErrorResponse"
+  ],
+  "CertificationResponse": [
+    "Certification",
+    "ErrorResponse"
+  ],
+  "StimulusScoreUnion": [
+    "StimulusScore",
+    "ErrorResponse"
+  ],
+  "CompanyNoteUnion": [
+    "CompanyNote",
+    "ErrorResponse"
+  ],
+  "ProjectNoteUnion": [
+    "ProjectNote",
+    "ErrorResponse"
+  ],
+  "ContingencyUnion": [
+    "Contingency",
+    "ErrorResponse"
+  ],
+  "ScenarioUnion": [
+    "Scenario",
+    "ErrorResponse"
+  ],
+  "ProjectUnion": [
+    "Project",
+    "ErrorResponse"
+  ],
+  "ProjectCompanyUnion": [
+    "ProjectCompany",
+    "ErrorResponse"
+  ],
+  "TenantCompanyRelationUnion": [
+    "TenantCompanyRelation",
+    "ErrorResponse"
+  ],
+  "NotificationUnion": [
+    "Notification",
+    "ErrorResponse"
+  ],
+  "ProjectAttachmentUnion": [
+    "ProjectAttachment",
+    "ErrorResponse"
+  ],
+  "AssetUnion": [
+    "Asset",
+    "ErrorResponse"
+  ],
+  "CompanyEvaluationNoteUnion": [
+    "CompanyEvaluationNote",
+    "ErrorResponse"
+  ]
+}

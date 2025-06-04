@@ -1,0 +1,1830 @@
+{
+  "backend-services/src/controller": {
+    "root": [
+      "backend-services/src/controller/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "backend-services/src/controller/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.9": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.10": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.11": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.12": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.13": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.14": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.15": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.16": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.17": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.18": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.19": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.20": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.21": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:generate": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:generate.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:generate.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:generate.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:generate.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:generate.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:generate.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate:tenant": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate:tenant.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate:tenant.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate:tenant.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate:tenant.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate:tenant.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:migrate:tenant.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:global": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:global.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:global.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:global.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:global.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:global.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:global.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:tenant": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:tenant.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:tenant.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:tenant.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:tenant.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:tenant.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:create:tenant.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:global": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:global.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:global.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:global.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:global.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:global.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:global.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:tenant": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:tenant.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:tenant.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:tenant.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:tenant.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:tenant.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.typeorm:revert:tenant.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.executor": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.options": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.options.script": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata.scriptContent": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata.runCommand": [
+      "backend-services/src/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "backend-services/src/controller/project.json",
+      "nx/core/project-json"
+    ],
+    "type": [
+      "backend-services/src/controller/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "backend-services/src/proto/controller": {
+    "root": [
+      "backend-services/src/proto/controller/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "backend-services/src/proto/controller/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.executor": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.options": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.options.script": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata.scriptContent": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata.runCommand": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.executor": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.options": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.options.script": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata.scriptContent": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata.runCommand": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "backend-services/src/proto/controller/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "backend-services/src/proto/controller/project.json",
+      "nx/core/project-json"
+    ],
+    "type": [
+      "backend-services/src/proto/controller/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "backend-services/src/user-api": {
+    "root": [
+      "backend-services/src/user-api/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "backend-services/src/user-api/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.9": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.10": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.11": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.12": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.13": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.14": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prebuild.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.proto-update.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:debug.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start:prod.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:watch.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:debug.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.options.script": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata.scriptContent": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata.runCommand": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "backend-services/src/user-api/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "backend-services/src/user-api/project.json",
+      "nx/core/project-json"
+    ],
+    "type": [
+      "backend-services/src/user-api/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "frontend-app": {
+    "root": [
+      "frontend-app/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "frontend-app/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.executor": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.options": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.options.script": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata.scriptContent": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.dev.metadata.runCommand": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.executor": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.options": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.options.script": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata.scriptContent": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.install-dev.metadata.runCommand": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.executor": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.options": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.options.script": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata.scriptContent": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:cov.metadata.runCommand": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.executor": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options.script": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.scriptContent": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.runCommand": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.executor": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.options": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.options.script": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata.scriptContent": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.spell.metadata.runCommand": [
+      "frontend-app/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "frontend-app/project.json",
+      "nx/core/project-json"
+    ],
+    "type": [
+      "frontend-app/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

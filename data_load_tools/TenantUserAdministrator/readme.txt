@@ -1,0 +1,1 @@
+This script inserts an administrator user in the global scheme of the application, and then use it when adding project in the loads of translateProjectsDataToProjects

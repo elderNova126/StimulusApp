@@ -1,0 +1,2116 @@
+syntax = "proto3";
+
+package controller;
+
+service DataService {
+  rpc SearchCompaniesSubset (SearchRequestPayload) returns (CompanySubsetResponse) {}
+  rpc SearchCompaniesByTaxId (SearchRequestPayload) returns (CompanyByTaxIdResponse) {}
+  rpc SearchProjectsSubset (SearchRequestPayload) returns (ProjectSubsetResponse) {}
+  rpc RelationShipPanelInfo (SearchRequestPayload) returns (RelationShipCompanyPanel) {}
+
+  rpc GetInternalCompaniesDashboard (FiltersDashboardPayload) returns (GetInternalCompaniesDashboardResponse) {}
+  rpc GetProjectsDashboard (FiltersDashboardPayload) returns (GetProjectsDashboardResultsResponse) {}
+  rpc GetTotalSpendDashboard (FiltersDashboardPayload) returns (GetTotalSpendDashboardResponse) {}
+
+  rpc CheckDataInternalDashboard (EmptyPayload) returns (CheckDataResponse) {}
+  rpc CheckDataProjectsDashboard (EmptyPayload) returns (CheckDataResponse) {}
+  rpc CheckDataSpentDashboard (EmptyPayload) returns (CheckDataResponse) {}
+  rpc GetUserAccount (EmptyPayload) returns (Account) {}
+  rpc GetDistinctTags (EmptyPayload) returns (ValueArray) {}
+  rpc FilterCompanyTag (FilterTagsPayload) returns (ValueArray) {}
+  rpc GetDistinctDiverseOwnership (EmptyPayload) returns (ValueArray) {}
+  rpc GetDistinctMinorityOwnership (EmptyPayload) returns (ValueArray) {}
+  rpc GetMinorityOwnership (EmptyPayload) returns (minorityOwnershipResponse) {}
+
+
+  rpc GetUploadReports(UploadReportsPayload) returns(UploadReportSearchResponse) {}
+  rpc CreateUploadReport(CreateReportPayload) returns(UploadReport) {}
+  rpc DeleteUploadReport(IdMessage) returns(ActionResponse) {}
+
+  rpc GetNotifications (NotificationPayload) returns (NotificationResponse) {}
+  rpc GetUserNotificationProfile (UserNotificationsPayload) returns (UserNotificationProfileResponse) {}
+  rpc SubscribeToTopic (TopicSubscriptionPayload) returns (UserNotificationProfileResponse) {}
+  rpc SubscribeToCategoryTopic (CategoryTopicSubscriptionPayload) returns (UserNotificationProfileResponse) {}
+  rpc UnsubscribeFromCategoryTopic (CategoryTopicSubscriptionPayload) returns (UserNotificationProfileResponse) {}
+  rpc UnsubscribeFromTopic (TopicSubscriptionPayload) returns (UserNotificationProfileResponse) {}
+  rpc GetSavedSearches (SavedSearch) returns (SavedSearchResponse) {}
+  rpc SearchCompanies (SearchRequestPayload) returns (CompanySearchResponse) {}
+  rpc SearchUnusedCompanies (SearchUnusedRequestPayload) returns (CompanySearchResponse) {}
+  rpc SearchCompanyById (SearchByIdRequestPayload) returns (CompanySearchResponse) {}
+  rpc GetCompanyProjectOverview (CompanyId) returns (CompanyProjectsOverview) {}
+  rpc SearchCompanyList (SearchRequestPayload) returns (CompanyListSearchRespose) {}
+  rpc SearchContacts (SearchRequestPayload) returns (ContactSearchRespose) {}
+  rpc SearchProducts (SearchRequestPayload) returns (ProductSearchResponse) {}
+  rpc SearchLocations (SearchRequestPayload) returns (LocationSearchResponse) {}
+  rpc SearchInsurances (SearchRequestPayload) returns (InsuranceSearchResponse) {}
+  rpc SearchCertifications (SearchRequestPayload) returns (CertificationSearchResponse) {}
+  rpc SearchStimulusScores (SearchRequestPayload) returns (StimulusScoreSearchResponse) {}
+  rpc SearchCompanyNotes (SearchRequestPayload) returns (NoteSearchResponse) {}
+  rpc SearchProjectNotes (SearchRequestPayload) returns (NoteSearchResponse) {}
+  rpc SearchCompanyEvaluationNotes (SearchRequestPayload) returns (NoteSearchResponse) {}
+  rpc SearchContingencies (SearchRequestPayload) returns (ContingencySearchResponse) {}
+  rpc SearchDataPoint (SearchRequestPayload) returns (DataPointSearchResponse) {}
+  rpc SearchScenarios (SearchRequestPayload) returns (ScenarioSearchResponse) {}
+  rpc SearchProjects (SearchRequestPayload) returns (ProjectsSearchResponse) {}
+  rpc SearchSupplierTierProjects (SearchRequestPayload) returns (ProjectsSearchResponse) {}
+  rpc SearchOtherTierProjects (SearchRequestPayload) returns (ProjectsSearchResponse) {}
+  rpc SearchBadges (SearchRequestPayload) returns (BadgeSearchResponse) {}
+
+  rpc SearchAllProjects (SearchRequestPayload) returns (ProjectsSearchResponse) {}
+  rpc SearchEvents (SearchEventsPayload) returns (EventsSearchResponse) {}
+  rpc SearchIndustries (SearchRequestPayload) returns (IndustrySearchResponse) {}
+  rpc GetProjectActivityLog (SearchRequestPayload) returns (EventsSearchResponse) {}
+  rpc GetCompanyActivityLog (SearchRequestPayload) returns (EventsSearchResponse) {}
+  rpc GetProjectAttachments(SearchRequestPayload) returns (ProjectAttachmentsResponse) {}
+  rpc GetCompanyAttachments(SearchRequestPayload) returns (CompanyAttachmentsResponse) {}
+  rpc GetCompanyAttachmentsByCompanyId(SearchRequestPayload) returns (CompanyAttachmentsResponse) {}
+  rpc GetAssets(SearchRequestPayload) returns (AssetsResponse) {}
+  rpc GetProjectEvaluationTemplate(GetEvaluationsPayload) returns (Evaluation) {}
+  rpc GetProjectCompanyEvaluations(GetEvaluationsPayload) returns (CompanyEvaluationResponse) {}
+  rpc GetProjectCompanies(CompanyProjectsPayload) returns (ProjectCompanyResponse) {}
+  rpc GetCompaniesByTaxIdAndName(QueryRequestPayload) returns (CompanySearchResponse) {}
+
+  rpc CloneCompanyList (UpdateCompanyListPayload) returns (CompanyList) {}
+  rpc CreateCompanyList (CreateRequestPayload) returns (CompanyList) {}
+  rpc GetIndustryFromCode(SearchRequestPayload) returns (NaicsCode) {}
+
+  rpc CreateProduct (CreateRequestPayload) returns (Product) {}
+  rpc CreateContact (CreateRequestPayload) returns (Contact) {}
+  rpc CreateLocation (CreateRequestPayload) returns (Location) {}
+  rpc CreateInsurance (CreateRequestPayload) returns (Insurance) {}
+  rpc CreateCertification (CreateRequestPayload) returns (Certification) {}
+  rpc CreateCompany (CreateRequestPayload) returns (Company){}
+  rpc CreateStimulusScore (CreateRequestPayload) returns (StimulusScore){}
+  rpc CreateCompanyNote (CreateRequestPayload) returns (Note){}
+  rpc CreateProjectNote (CreateRequestPayload) returns (Note){}
+  rpc CreateCompanyEvaluationNote (CreateRequestPayload) returns (Note){}
+  rpc CreateContingency (CreateRequestPayload) returns (Contingency){}
+  rpc CreateDataPoint (CreateRequestPayload) returns (DataPoint){}
+  rpc CreateScenario (CreateRequestPayload) returns (Scenario){}
+  rpc CreateProject (ProjectPayload) returns (Project){}
+  rpc CreateEvent (Event) returns (Event){}
+  rpc CreateSavedSearch (CreateRequestPayload) returns (SavedSearch){}
+  rpc CreateProjectAttachment(CreateRequestPayload) returns (ProjectAttachment){}
+  rpc CreateCompanyAttachment(CreateRequestPayload) returns (CompanyAttachment){}
+  rpc CreateAsset(CreateRequestPayload) returns (AssetResponse){}
+  rpc CreateIndustry(CreateRequestPayload) returns (Industry){}
+  rpc CreateBadge(CreateRequestPayload) returns (Badge){}
+  rpc CreateBadgeTenantRelationship(CreateRequestPayload) returns (BadgeTenantCompanyRelationships) {}
+
+
+  rpc DeleteCompanyList (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteProduct (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteContact (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteLocation (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteInsurance (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteCertification (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteCompany (DeleteCompanyPayload) returns (ActionResponse) {}
+  rpc DeleteStimulusScore (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteCompanyNote (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteProjectNote (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteCompanyEvaluationNote (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteContingency (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteDataPoint (DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteScenario (DeleteScenarioPayload) returns (ActionResponse) {}
+  rpc DeleteProjectAttachment(DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteCompanyAttachment(DeleteRequestPayload) returns (ActionResponse) {}
+  rpc DeleteAsset(DeleteGlobalRequestPayload) returns (ActionResponse) {}
+  rpc DeleteIndustry(DeleteIndustryRequestPayload) returns (ActionResponse) {}
+  rpc DeleteBadge(DeleteBadgeRequestPayload) returns (ActionResponse) {}
+  rpc DeleteBadgeTenantRelationships(DeleteBadgeTenantRelationshipsRequestPayload) returns (ActionResponse) {}
+
+  rpc DeleteEvent (DeleteRequestPayload) returns (Event){}
+  rpc DeleteSavedSearch (DeleteRequestPayload) returns (ActionResponse){}
+
+  rpc CancelProject (DeleteScenarioPayload) returns (Project) {}
+  rpc CloneProject (ProjectClonePayload) returns (Project) {}
+
+  rpc SendProjectCollaboration(ProjectCollaborationPayload) returns (CollaborationResponse) {}
+  rpc GetProjectCollaborations(CollaborationRequestPayload) returns (CollaborationsResponse) {}
+  rpc GetUserCollaborations(CollaborationRequestPayload) returns (CollaborationsResponse) {}
+  rpc CancelCollaboration(Collaboration) returns (ActionResponse) {}
+  rpc SetUserCollaboration(Collaboration) returns (ActionResponse) {}
+  rpc SetCollaborationStatus(Collaboration) returns (CollaborationResponse) {}
+
+
+  rpc AddToCompanyList (UpdateCompanyListPayload) returns (CompanyList) {}
+  rpc RemoveFromCompanyList (UpdateCompanyListPayload) returns (CompanyList) {}
+  rpc UpdateCompanyList (UpdateCompanyListPayload) returns (CompanyList) {}
+
+  rpc AddCompaniesToProject (UpdateProjectCompaniesPayload) returns (Project) {}
+  rpc UpdateProduct (UpdateRequestPayload) returns (Product) {}
+  rpc UpdateContact (UpdateRequestPayload) returns (Contact) {}
+  rpc UpdateLocation (UpdateRequestPayload) returns (Location) {}
+  rpc UpdateInsurance (UpdateRequestPayload) returns (Insurance) {}
+  rpc UpdateCertification (UpdateRequestPayload) returns (Certification) {}
+  rpc UpdateCompany (UpdateRequestPayload) returns (Company) {}
+  rpc UpdateStimulusScore (UpdateRequestPayload) returns (StimulusScore) {}
+  rpc UpdateCompanyNote (UpdateRequestPayload) returns (Note) {}
+  rpc UpdateBadge (UpdateRequestPayload) returns (Badge) {}
+  rpc UpdateBadgeTenantRelationship (UpdateRequestPayload) returns (BadgeTenantCompanyRelationships) {}
+
+  rpc UpdateProjectNote (UpdateRequestPayload) returns (Note) {}
+  rpc UpdateCompanyEvaluationNote (UpdateRequestPayload) returns (Note) {}
+
+  rpc UpdateProjectAttachment (UpdateRequestPayload) returns (ProjectAttachment) {}
+
+  rpc EvaluateCompany (EvaluateCompanyPayload) returns (CompanyEvaluation) {}
+  rpc UpdateCompanyEvaluation (EvaluateCompanyPayload) returns (CompanyEvaluation) {}
+  rpc ReEvaluationCompanyEvaluation (MigrateTenantPayload) returns (ReEvaluationResponse);
+
+  rpc UpdateContingency (UpdateRequestPayload) returns (Contingency) {}
+  rpc UpdateDataPoint (UpdateRequestPayload) returns (DataPoint) {}
+
+  rpc UpdateScenario (UpdateRequestPayload) returns (Scenario) {}
+
+  rpc UpdateProject (UpdateRequestPayload) returns (Project) {}
+  rpc UpdateSavedSearch (UpdateRequestPayload) returns (SavedSearch){}
+  rpc UpdateIndustry (UpdateRequestPayload) returns (Industry) {}
+  rpc ReadNotification (UpdateRequestPayload) returns (Notification) {}
+
+  rpc AnswerProjectCriteria (CompanyProjectsPayload) returns(ProjectCompany){}
+  rpc UpdateProjectCompany (CompanyProjectsPayload) returns(ProjectCompany){}
+  rpc RemoveCompanyFromProject (CompanyProjectsPayload) returns(ActionResponse){}
+  rpc MarkProjectAsDeleted (DeleteRequestPayload) returns(ActionResponse){}
+
+  rpc MigrateTenant (MigrateTenantPayload) returns (MigrateTenantResponse) {}
+  rpc ReverseLastTenantMigration (MigrateTenantPayload) returns (MigrateTenantResponse) {}
+
+  rpc SearchTenantCompanyRelation (SearchRequestPayload) returns (TenantCompanyRelationSearchResponse) {}
+  rpc CreateTenantCompanyRelation (CreateRequestPayload) returns (TenantCompanyRelation){}
+  rpc DeleteTenantCompanyRelation (DeleteScenarioPayload) returns (ActionResponse) {}
+  rpc UpdateTenantCompanyRelation (UpdateRequestPayload) returns (TenantCompanyRelation) {}
+  rpc UpdateUser(User) returns (User){}
+
+  rpc GetUserSettings (UserRequest) returns (UserSettingsResponse) {}
+
+  rpc GetAllTenants (EmptyPayload) returns (TenantsResponse) {}
+  rpc GetUserTenants (UserRequest) returns (UserTenantsResponse) {}
+  rpc GetUserTenantRoles (UserTenantRequest) returns (UserTenantRolesResponse) {}
+
+  rpc GetUsersByExternalIds(SearchUsersRequest) returns (UsersResponse){}
+  rpc GetUserByInternalId(User) returns (User) {}
+  rpc GetUserByNameAndSurname(User) returns (ListUsersResponse) {}
+  rpc GetUserById(User) returns (User) {}
+  rpc GetTenantUsers (TenantRequest) returns (UsersResponse) {}
+
+  rpc CreateUser (CreateGlobalRequestPayload) returns (User) {}
+  rpc DeleteUser(User) returns (ActionResponse){}
+  rpc DeleteTenantUser(User) returns (ActionResponse){}
+  rpc ProvisionTenantUser (ProvisionTenantUserRequestPayload) returns (User) {}
+
+  rpc CreateTenant (CreateTenantPayload) returns (CreateTenantResponse) {}
+  rpc RequestAccess (UserRequest) returns (UserAccessResponse) {}
+
+  rpc UpdateAndReRunIndex (MigrateGlobalPayload) returns (MigrateGlobalResponse) {}
+  rpc MigrateGlobal (MigrateGlobalPayload) returns (MigrateGlobalResponse) {}
+  rpc SetCompanyStatus (CompanyStatusPayload) returns (BooleanResponse) {}
+  rpc SetCompanyType (CompanyTypePayload) returns (TenantCompanyRelation) {}
+  rpc BulkSetCompanyType (BulkCompanyTypePayload) returns (TenantCompanyRelationResponse) {}
+  rpc BulkUpdateTenantCompanyRelations (BulkCompanyRelationPayload) returns (TenantCompanyRelationResponse) {}
+
+  rpc GetAccountInfo(EmptyPayload) returns (AccountInfo) {}
+
+  rpc GetAllReports(EmptyPayload) returns (ReportsResponse) {}
+  rpc GetReportEmbeddingParameters(EmbedReportPayload) returns (EmbedParamsResponse) {}
+  rpc GetMultipleReportsEmbeddingParameters(EmbedMultipleReportsPayload) returns (EmbedParamsResponse) {}
+
+  rpc GetReportData(ReportDataPayload) returns (ReportDataResponse) {}
+
+  rpc CalculateStimulusScore (CompanyId) returns (BooleanResponse) {}
+  rpc TriggerRelationUpdate (EmptyPayload) returns (TenantCompanyRelationResponse) {}
+
+  rpc GetSharedList (EmptyPayload) returns (SharedListResponse) {}
+  rpc CreatedSharedList (SharedListPayload) returns (SharedList) {}
+  rpc ChangeStatus (SharedListPayload) returns (SharedList) {}
+  rpc GetCollaboratorsList(SharedListPayload) returns (CollaboratorsResponse) {}
+
+  rpc LoginByApiKey (LoginAuthPayload) returns (AuthSuccessfully) {}
+  rpc NewExternalSystemAuth (ExternalSystemAuthPayload) returns (ExternalSystemAuth) {}
+  rpc GetAuthenticationByToken (ExternalSystemToken) returns (ExternalSystemAuth) {}
+  rpc GetApiKeys (ExternalSystemAuthPayload) returns (ExternalSystemAuthResponse) {}
+  rpc UpdateExternalSystemAuth (ExternalSystemAuthPayload) returns (ExternalSystemAuth) {}
+  rpc RemoveExternalSystemAuth (ExternalSystemAuthPayload) returns (RemoveExternalSystemAuthResponse) {}
+
+  rpc SendExternalUploadNotification(ExternalUploadNotification) returns (EmailResponse) {}
+  rpc SendExternalUploadNotificationSlack(ExternalUploadNotificationSlack) returns (SlackNotificationResponse) {}
+  rpc SendMicroLoggingAlertOnSlack(MicroLoggingAlertRequest) returns (MicroLoggingAlertResponse) {}
+}
+
+
+service DiscoveryService {
+  rpc DiscoverCompanies (QueryRequestPayload) returns (CompanySearchResponse) {}
+  rpc DiscoverCompaniesMap (QueryRequestPayload) returns (CompanySearchResponse) {}
+  rpc CountCompaniesByList (CompaniesByListTypePayload) returns (CountCompaniesByResponse) {}
+
+}
+
+service NormalizerService {
+  rpc CompaniesStream(stream CompanyMessage) returns (StreamResponse) {}
+  rpc ContactsStream(stream ContactMessage) returns (StreamResponse) {}
+  rpc ProductsStream(stream ProductMessage) returns (StreamResponse) {}
+  rpc LocationsStream(stream LocationMessage) returns (StreamResponse) {}
+  rpc InsurancesStream(stream InsuranceMessage) returns (StreamResponse) {}
+  rpc CertificationsStream(stream CertificationMessage) returns (StreamResponse) {}
+  rpc ContingenciesStream(stream ContingencyMessage) returns (StreamResponse) {}
+  rpc DataPointsStream(stream DataPointMessage) returns (StreamResponse) {}
+  rpc ProjectStream(stream ProjectMessage) returns (StreamResponse) {}
+  rpc IndustriesStream(stream IndustryMessage) returns (StreamResponse) {}
+  rpc CheckTenantConnection(EmptyPayload) returns(ConnectedResponse) {}
+  rpc EndIngestion(EmptyPayload) returns(EndIngestionResponse) {}
+
+  rpc GetUploadReports(UploadReportsPayload) returns(UploadReportSearchResponse) {}
+  rpc UpdateUploadReport(UpdateReportPayload) returns(UploadReport) {}
+  rpc AddUploadReportError(AddUploadReportErrorPayload) returns(UploadReport) {}
+}
+
+
+message RemoveExternalSystemAuthResponse {
+  bool successful  = 1;
+}
+
+message ExternalSystemAuthResponse{
+  repeated ExternalSystemAuth results = 1;
+  int32 count = 2;
+}
+
+message ExternalSystemToken {
+   string token = 1;
+}
+
+message ExternalSystemAuthPayload {
+   string id = 1;
+   string tenantId = 2;
+   string name = 3;
+   string userId = 4;
+   string status = 5;
+}
+
+message UpdateExternalSystemAuthPayload {
+   string id = 1;
+   string tenantId = 2;
+   string name = 3;
+   string status = 4;
+}
+
+message ExternalSystemAuth {
+   string id = 1;
+   string tenantId = 2;
+   string apiKey = 3;
+   string status = 4;
+   string created = 5;
+   string name = 6;
+   string userId = 7;
+}
+
+message LoginAuthPayload {
+  string apiKey = 1;
+}
+
+message AuthSuccessfully {
+  string token = 1;
+}
+
+message CreateReportPayload {
+  string fileName = 1;
+  string userId = 2;
+}
+message AddUploadReportErrorPayload {
+  string id = 1;
+  ReportError error = 2;
+}
+message UpdateReportPayload {
+  UploadReport uploadReport = 1;
+}
+
+message Error {
+  string message = 1;
+}
+
+message IdMessage {
+  message ErrorContext {
+    string property = 1;
+    string errorCode = 2;
+    string message = 3;
+  }
+
+  string id = 1;
+  repeated ErrorContext context = 2;
+  string properties = 3;
+}
+message ReportError {
+  string code = 1;
+  IdMessage data = 2;
+}
+message UploadReport {
+  string id = 1;
+  string created = 2;
+  string status = 3;
+  string fileName = 4;
+  int32 errorsCount = 5;
+  User user = 6;
+  repeated string affectedCompanies = 7;
+}
+
+message UploadReportErrors {
+  string id = 1;
+  UploadReport uploadReport = 2;
+  ReportError errors = 3;
+}
+
+message UploadReportSearchResponse {
+  repeated UploadReport results = 1;
+  int32 count = 2;
+}
+
+message ListUsersResponse{
+  repeated User results = 1;
+  int32 count = 2;
+}
+
+message CollaboratorsResponse{
+  repeated Collaborator results = 1;
+  int32 count = 2;
+}
+
+enum SupplierStatus {
+  ACTIVE = 0;
+  INACTIVE = 1;
+  ARCHIVED = 2;
+}
+
+enum SupplierType {
+  INTERNAL = 0;
+  EXTERNAL = 1;
+}
+
+message TenantCompanyRelationResponse {
+  repeated TenantCompanyRelation results = 1;
+}
+
+message CompanyStatusPayload {
+  Company company = 1;
+  SupplierStatus status = 2;
+}
+message BulkCompanyRelationPayload {
+  repeated string companyIds = 1;
+  TenantCompanyRelation tenantCompanyRelation = 2;
+}
+message BulkCompanyTypePayload {
+  repeated string companyIds = 1;
+  SupplierType type = 2;
+}
+message CompanyTypePayload {
+  Company company = 1;
+  SupplierType type = 2;
+}
+
+message BooleanResponse {
+  bool success = 1;
+}
+
+message MigrateGlobalPayload {}
+
+message MigrateGlobalResponse {
+  bool synchronized = 1;
+  string error = 2;
+}
+
+message EmptyPayload {}
+
+message FilterTagsPayload {
+  string tag = 1;
+}
+
+message CreateTenantPayload {
+  User user = 1;
+  Account account = 2;
+  TenantCompany company = 3;
+}
+
+message CreateTenantResponse {
+  bool created = 1;
+  string error = 2;
+}
+
+message TenantCompany {
+  string name = 1;
+  string departmentName = 2;
+  string ein = 3;
+  string duns = 4;
+  string created = 5;
+  string updated = 6;
+  Tenant tenant = 7;
+}
+
+message Account {
+  int32 id = 1;
+  string stimulusPlan = 2;
+  string paymentMethod = 3;
+  string nameOnCard = 4;
+  string cardNumber = 5;
+  string cardExpirationDate = 6;
+  string postalCode = 7;
+  string country = 8;
+  string created = 9;
+  string updated = 10;
+}
+message CreateGlobalRequestPayload {
+  oneof Payload {
+    User user = 1;
+  }
+}
+
+message ProvisionTenantUserRequestPayload {
+  string email = 1;
+  bool resend = 2;
+}
+
+message User {
+  string id = 1;
+  string externalAuthSystemId = 2;
+  string email = 3;
+  string givenName = 4;
+  string surname = 5;
+  string mobilePhone = 6;
+  string jobTitle = 7;
+  bool accountEnabled = 8;
+  string mail = 9;
+}
+
+message Collaborator {
+  string id = 1;
+  string externalAuthSystemId = 2;
+  string givenName = 3;
+  string surname = 4;
+  string status = 5;
+  string sharedListId = 6;
+}
+
+message Tenant {
+  string id = 1;
+  string name = 2;
+  string provisionStatus = 3;
+  TenantCompany tenantCompany = 4;
+  Account account = 5;
+  bool isDefault = 6;
+}
+
+message TenantsResponse {
+  repeated Tenant tenants = 1;
+}
+
+message UserTenantsResponse {
+  repeated Tenant tenants = 1;
+}
+
+message Role {
+  string id = 1;
+  string name = 2;
+  bool internal = 3;
+  string description = 4;
+}
+
+message UserTenantRolesResponse {
+  Tenant tenant = 1;
+  repeated Role roles = 2;
+  bool global = 3;
+}
+
+message UserTenantRequest {
+  string externalAuthSystemId = 1;
+  string tenantId = 2;
+}
+
+message UserRequest {
+  string externalAuthSystemId = 1;
+}
+
+message SearchUsersRequest {
+  repeated string externalAuthSystemIds = 1;
+}
+
+message UserSettingsResponse {
+  string settings = 1;
+}
+
+message UserAccessResponse {
+  bool success = 1;
+}
+
+message TenantRequest {
+  string tenantId = 1;
+  Pagination pagination = 2;
+  Order order = 3;
+  string typeOfList = 4;
+}
+
+message UsersResponse {
+  repeated User results = 1;
+  int32 count = 2;
+}
+
+message QueryRequestPayload {
+  string search = 1;
+  string column = 2;
+  Pagination pagination = 3;
+  repeated QueryFilter filters = 4;
+  Order order = 5;
+  GeoFilter locationRange = 6;
+}
+message GeoFilter{
+  double lat = 1;
+  double lng = 2;
+  int32 radius = 3;
+}
+
+message FilterRangeValue{
+  required string start = 1;
+  required string end = 2;
+}
+
+message ValueArray {
+  repeated string values = 1;
+}
+
+message MinorityOwnership {
+  string id = 1;
+  string minorityOwnershipDetail = 2;
+  string displayName = 3;
+}
+
+message minorityOwnershipResponse {
+  repeated MinorityOwnership results = 1;
+}
+
+message QueryFilter {
+  string key = 1;
+  enum KeyType {
+    STRING = 0;
+    INT = 1;
+    DOUBLE = 2;
+    ARRAY_STRINGS = 3;
+    BOOLEAN = 4;
+  }
+  KeyType keyType = 2 [default = STRING];
+
+  oneof filterValue {
+    string value = 3;
+    FilterRangeValue range = 4;
+    ValueArray array = 5;
+  }
+}
+
+message EndIngestionResponse {
+  string status = 1;
+}
+
+message ConnectedResponse {
+  bool connected = 1;
+}
+
+message CompanyMessage {
+  string action = 1;
+  Company company = 2;
+}
+
+message Options {
+  SupplierStatus supplierStatus = 1 [default = ACTIVE];
+  SupplierType supplierType = 2 [default = INTERNAL];
+}
+
+message ContactMessage{
+  string action = 1;
+  Contact contact = 2;
+}
+
+message ProductMessage {
+  string action = 1;
+  Product product = 2;
+}
+
+message LocationMessage {
+  string action = 1;
+  Location location = 2;
+}
+
+message InsuranceMessage {
+  string action = 1;
+  Insurance insurance = 2;
+}
+
+message CertificationMessage {
+  string action = 1;
+  Certification certification = 2;
+}
+
+message ContingencyMessage {
+  string action = 1;
+  Contingency contingency = 2;
+}
+
+message DataPointMessage {
+  string action = 1;
+  DataPoint dataPoint = 2;
+}
+
+message IndustryMessage {
+  string action = 1;
+  Industry industry = 2;
+}
+
+message ProjectMessage {
+  message ProjectWithMetrics {
+    Project project = 1;
+    repeated EvaluationMetric metrics = 2;
+  }
+  string action = 1;
+  ProjectWithMetrics projectMessage = 2;
+}
+
+message StreamResponse{
+  string message = 1;
+  int32 number = 2;
+}
+
+message MigrateTenantPayload {}
+
+message MigrateTenantResponse {
+  bool synchronized = 1;
+  string error = 2;
+}
+message ReEvaluationResponse {
+  bool successful  = 1;
+}
+
+message ActionResponse {
+  bool done = 1;
+}
+
+message CompanyId {
+  string companyId = 1;
+}
+
+message CompanyProjectsPayload {
+  string companyId = 1;
+  int32 projectId = 2;
+  string type = 3;
+  repeated CriteriaAnswer criteriaAnswers = 4;
+}
+
+message CriteriaAnswer {
+  string criteria = 1;
+  bool answer = 2;
+}
+
+message CategoryTopicSubscriptionPayload {
+  string category = 1;
+}
+
+message TopicSubscriptionPayload {
+  string id = 1;
+  repeated int32 projectIds = 2;
+  repeated string companyIds = 3;
+  repeated string projectCompanyIds = 4;
+}
+
+message UserNotificationsPayload {
+  string userId = 1;
+}
+
+message UploadReportsPayload{
+  UploadReport uploadReport = 1;
+  repeated string nameIn = 2;
+}
+
+message NotificationPayload {
+  string userId = 1;
+  Pagination pagination = 2;
+  string fromTimestamp = 3;
+  bool companiesOnly = 4;
+  bool projectsOnly = 5;
+  bool read = 6;
+  repeated string companyIds = 7;
+  repeated int32 projectIds = 8;
+}
+
+message DeleteGlobalRequestPayload {
+  string id = 1;
+  string userId = 2;
+}
+
+message DeleteRequestPayload {
+  int32 id = 1;
+  string userId = 2;
+}
+
+message DeleteIndustryRequestPayload {
+  string id = 1;
+  string userId = 2;
+}
+
+message DeleteBadgeRequestPayload {
+  string id = 1;
+  string userId = 2;
+}
+
+
+message DeleteBadgeTenantRelationshipsRequestPayload {
+  repeated string ids = 1;
+  string userId = 2;
+}
+
+message DeleteCompanyPayload {
+  repeated string ids = 1;
+}
+
+message DeleteScenarioPayload {
+  int32 id = 1;
+  string userId = 2;
+}
+
+message ProjectClonePayload {
+  int32 id = 1;
+  string title = 2;
+  string relation = 3;
+  bool includeDescription = 4;
+  bool includeSuppliers = 5;
+  bool includeNotes = 6;
+  bool includeCriteria = 7;
+  bool includePeople = 8;
+  bool includeBudget = 9;
+  bool includeKeywords = 10;
+  bool includeAttatchment = 11;
+  repeated string people = 12;
+  string userId = 13;
+}
+
+message ProjectPayload {
+  Project project = 1;
+  repeated string statusIn = 2;
+  string userId = 3;
+  UserCollaborationType accessType = 4;
+  string companyId = 5;
+}
+
+enum UserCollaborationStatus {
+  PENDING = 0;
+  ACCEPTED = 1;
+  REJECTED = 2;
+}
+
+enum UserCollaborationType {
+  VIEWER = 0;
+  COLLABORATOR = 1;
+  OWNER = 2;
+}
+
+message CollaborationResponse {
+  string id = 0;
+  string userId = 1;
+  Project project = 2;
+  string created = 3;
+  string updated = 4;
+  string status = 5;
+  string userType = 6;
+}
+
+message Collaboration {
+  string id = 0;
+  Tenant user = 1;
+  Project project = 2;
+  string created = 3;
+  string updated = 4;
+  UserCollaborationStatus status = 5;
+  UserCollaborationType type = 6;
+  string error = 7;
+  string message = 8;
+}
+
+message ProjectCollaborationPayload {
+  Project project = 1;
+  User user = 2;
+  UserCollaborationType type = 3;
+}
+
+message CollaborationsResponse {
+  repeated CollaborationResponse results = 1;
+  int32 count = 2;
+}
+
+message CollaborationRequestPayload {
+  Pagination pagination = 1;
+  Order order = 2;
+  UserCollaborationType type = 3;
+  oneof Payload {
+    ProjectPayload projectPayload = 4;
+    UserRequest user = 5;
+  }
+}
+
+message AssetResponse {
+  Asset asset = 1;
+  oneof Payload {
+    User user = 8;
+    Company company = 9;
+  }
+}
+
+
+message Asset {
+  string id = 1;
+  string createdBy = 2;
+  string filename = 3;
+  string originalFilename = 4;
+  string updated = 5;
+  string url = 6;
+}
+
+message AssetWithRelation {
+  Asset asset = 1;
+  oneof Payload {
+    User user = 2;
+    Company company = 3;
+  }
+}
+
+
+message ProjectAttachment {
+  int32 id = 1;
+  string createdBy = 2;
+  string filename = 3;
+  string originalFilename = 4;
+  string updated = 5;
+  string url = 6;
+  int32 size = 8;
+  oneof filterValue {
+    string userId = 9;
+    Project project = 10;
+  }
+}
+
+message CompanyAttachment {
+  int32 id = 1;
+  string createdBy = 2;
+  string filename = 3;
+  string originalFilename = 4;
+  string updated = 5;
+  string url = 6;
+  bool isPrivate = 7;
+  int32 size = 8;
+  Company company = 9;
+  Tenant tenant = 10;
+  string type = 11;
+}
+
+message EvaluationComponents {
+  int32 quality = 1;
+  int32 reliability = 2;
+  int32 features = 3;
+  int32 cost = 4;
+  int32 relationship = 5;
+  int32 financial = 6;
+  int32 diversity = 7;
+  int32 innovation = 8;
+  int32 flexibility = 9;
+  int32 brand = 10;
+}
+
+message EvaluateCompanyPayload {
+  int32 id = 1;
+  int32 projectId = 2;
+  int32 projectCompanyId = 3;
+  int32 budgetSpend = 4;
+  string createdBy = 5;
+  string description = 6;
+  string evaluationDate = 7;
+
+  EvaluationComponents components = 8;
+}
+
+message UpdateCompanyListPayload {
+  string id = 1;
+  string userId = 2;
+  repeated string companyIds = 3;
+  bool isPublic = 4;
+  string name = 5;
+  string tenantId = 6;
+}
+message UpdateProjectCompaniesPayload {
+  int32 projectId = 1;
+  repeated string companyIds = 2;
+}
+message UpdateRequestPayload {
+  string userId = 1;
+  oneof Payload {
+    Certification certification = 3;
+    Location location = 4;
+    Insurance insurance = 5;
+    Company company = 6;
+    Contact contact = 7;
+    Product product = 8;
+    StimulusScore stimulusScore = 9;
+    Note note = 10;
+
+    Contingency contingency = 12;
+    DataPoint dataPoint = 13;
+    Scenario scenario = 14;
+    TenantCompanyRelation tenantCompanyRelation = 15;
+    SavedSearch savedSearch = 16;
+    ProjectPayload projectPayload = 17;
+    Notification notification = 18;
+    ProjectAttachment projectAttachment = 19;
+    AssetWithRelation assetPayload = 20;
+    Industry industry = 21;
+    IndustriesPayload industriesPayload = 24;
+    Badge badge = 25;
+    BadgeTenantCompanyRelationships badgeTenantCompanyRelationship = 26;
+  }
+  string dataTraceSource = 22;
+  string traceFrom = 23;
+}
+
+message IndustriesPayload {
+  repeated string industryIds = 1;
+  repeated string newCustomIndustries = 2;
+}
+
+message CreateRequestPayload {
+  oneof Payload {
+    Certification certification = 3;
+    Location location = 4;
+    Insurance insurance = 5;
+    Company company = 6;
+    Contact contact = 7;
+    Product product = 8;
+    StimulusScore stimulusScore = 9;
+    Note note = 10;
+    Contingency contingency = 12;
+    DataPoint dataPoint = 13;
+    Scenario scenario = 14;
+    TenantCompanyRelation tenantCompanyRelation = 15;
+    SavedSearch savedSearch = 16;
+    ProjectPayload projectPayload = 17;
+    ProjectAttachment projectAttachment = 18;
+    AssetWithRelation assetPayload = 19;
+    CompanyList companyList = 20;
+    Industry industry = 21;
+    GeoFilter geofilter = 22;
+    bool currentLocationIsSet = 23;
+    Badge badge = 24;
+    BadgeTenantCompanyRelationships badgeTenantCompanyRelationship = 25;
+    CompanyAttachment companyAttachment = 26;
+  }
+}
+
+message SearchEventsPayload {
+  Event event = 1;
+  Pagination pagination = 2;
+  Order order = 3;
+  string notUserId = 4;
+  string fromTimestamp = 5;
+  string toTimestamp = 6;
+  string companyId = 7;
+  string projectId = 8;
+  string userId = 9;
+}
+
+message FiltersDashboardPayload {
+  string timePeriodFilter = 1;
+  string granularityFilter = 2;
+}
+
+message CheckDataResponse {
+  bool hasData = 1;
+  int32 prevYear = 2;
+  int32 currentYear = 3;
+}
+
+message GetInternalCompaniesDashboardResponse {
+  repeated InternalCompaniesResults results = 1;
+  int32 count = 2;
+  int32 checkPrevYear = 3;
+}
+
+message InternalCompaniesResults {
+  string name = 1;
+  int32 Companies = 2;
+}
+
+
+message GetProjectsDashboardResultsResponse {
+  repeated ProjectsDashboardResults results = 1;
+  int32 count = 2;
+  int32 checkPrevYear = 3;
+}
+
+message ProjectsDashboardResults {
+  string name = 1;
+  int32 Projects = 2;
+}
+
+message GetTotalSpendDashboardResponse {
+  repeated TotalSpendDashboardResults results = 1;
+  int32 count = 2;
+  int32 checkPrevYear = 3;
+}
+
+message TotalSpendDashboardResults {
+  string name = 1;
+  int32 Spent = 2;
+}
+
+message GetEvaluationsPayload {
+  int32 projectId = 1;
+}
+message SearchRequestPayload {
+  string query = 1;
+  Pagination pagination = 2;
+  Order order = 3;
+  oneof Payload {
+    Certification certification = 4;
+    Location location = 5;
+    Insurance insurance = 6;
+    Company company = 7;
+    Contact contact = 8;
+    Product product = 9;
+    StimulusScore stimulusScore = 10;
+    Note note = 11;
+
+    Contingency contingency = 13;
+    DataPoint dataPoint = 14;
+    Scenario scenario = 15;
+    TenantCompanyRelation tenantCompanyRelation = 16;
+    ProjectPayload projectPayload = 17;
+    Event event = 18;
+    ProjectAttachment projectAttachment = 19;
+    AssetWithRelation assetPayload = 20;
+    CompanyList companyList = 21;
+    NaicsCode naicsCode = 22;
+    Industry industry = 23;
+    Badge badge = 24;
+    CompanyAttachment companyAttachment = 25;
+  }
+  string userId = 26;
+  repeated string ids = 27;
+  string companyId = 28;
+  string tenantId = 29;
+  string type = 30;
+}
+
+message SearchUnusedRequestPayload {
+  Pagination pagination = 1;
+  Order order = 2;
+  string createdFrom = 3;
+  string createdTo = 4;
+}
+
+message SearchByIdRequestPayload {
+  string id = 1;
+}
+
+message Pagination {
+  int32 page = 1;
+  int32 limit = 2;
+}
+
+message Order {
+  string key = 1;
+  string direction = 2;
+}
+
+message SavedSearchResponse {
+  repeated SavedSearch results = 1;
+}
+
+message UserNotificationProfileResponse {
+  string id = 1;
+  repeated string subscribedProjects = 2;
+  repeated string subscribedCompanies = 3;
+  repeated string subscribedProjectCompanies = 4;
+}
+
+message NotificationResponse {
+  repeated Notification results = 1;
+  int32 count = 2;
+}
+
+message NoteSearchResponse {
+  repeated Note results = 1;
+  int32 count = 2;
+}
+
+message ContingencySearchResponse {
+  repeated Contingency results = 1;
+  int32 count = 2;
+}
+
+message TenantCompanyRelationSearchResponse {
+  repeated TenantCompanyRelation results = 1;
+}
+message EventsSearchResponse {
+  repeated Event results = 1;
+  int32 count = 2;
+}
+
+message ProjectsSearchResponse {
+  repeated Project results = 1;
+  int32 count = 2;
+}
+
+message ProjectCompanyResponse {
+  repeated ProjectCompany results = 1;
+  int32 count = 2;
+}
+
+message CompanyEvaluationResponse {
+  repeated CompanyEvaluation results = 1;
+  int32 count = 2;
+}
+
+message ProjectAttachmentsResponse {
+  repeated ProjectAttachment results = 1;
+  int32 count = 2;
+}
+
+message CompanyAttachmentsResponse {
+  repeated CompanyAttachment results = 1;
+  int32 count = 2;
+}
+
+message AssetsResponse {
+  repeated AssetResponse results = 1;
+  int32 count = 2;
+}
+
+message DataPointSearchResponse {
+  repeated DataPoint results = 1;
+}
+
+message IndustrySearchResponse {
+  repeated Industry results = 1;
+}
+
+message CompanyProjectsOverview {
+  double globalSpent = 1;
+  int32 totalProjects = 2;
+  int32 accountProjects = 3;
+  double accountSpent = 4;
+  int32 accountEvaluations = 6;
+  int32 totalEvaluations = 7;
+}
+
+message ScenarioSearchResponse {
+  repeated Scenario results = 1;
+  int32 count = 2;
+}
+
+message CompanySearchResponse {
+  repeated Company results = 1;
+  int32 count = 2;
+}
+
+message CountCompaniesByResponse {
+  int32 count = 1;
+}
+
+message CompaniesByListTypePayload {
+  GeneralTypeList listType= 1;
+}
+
+message CompanyLocationSearchResponse {
+  repeated CompanyLocation results = 1;
+  int32 count = 2;
+}
+
+message ContactSearchRespose {
+  repeated Contact results = 1;
+  int32 count = 2;
+}
+message CompanyListSearchRespose {
+  repeated CompanyList results = 1;
+  int32 count = 2;
+}
+message ProductSearchResponse {
+  repeated Product results = 1;
+  int32 count = 2;
+}
+
+message BadgeSearchResponse {
+  repeated Badge results = 1;
+  int32 count = 2;
+}
+
+message LocationSearchResponse {
+  repeated Location results = 1;
+  int32 count = 2;
+}
+
+message StimulusScoreSearchResponse {
+  repeated StimulusScore results = 1;
+  int32 count = 2;
+}
+
+message InsuranceSearchResponse {
+  repeated Insurance results = 1;
+  int32 count = 2;
+}
+
+message CertificationSearchResponse {
+  repeated Certification results = 1;
+  int32 count = 2;
+}
+
+message NaicsCodeResponse {
+  repeated NaicsCode results = 1;
+  int32 count = 2;
+}
+
+message IndustryResponse {
+  repeated Industry results = 1;
+  int32 count = 2;
+}
+
+message CompanySubsetResponse {
+  repeated CompanySubset results = 1;
+}
+message CompanySubset {
+  string id = 1;
+  string legalBusinessName = 2;
+  string doingBusinessAs = 3;
+}
+
+message CompanyByTaxIdResponse {
+  repeated CompanyByTaxId results = 1;
+}
+message CompanyByTaxId {
+  string id = 1;
+  string legalBusinessName = 2;
+  string doingBusinessAs = 3;
+  string taxIdNo = 4;
+}
+
+message Company {
+  string id = 1;
+  string created = 2;
+  string updated = 3;
+  string type = 4;
+  string parentCompany = 5;
+  string legalBusinessName = 6;
+  string doingBusinessAs = 7;
+  string jurisdictionOfIncorporation = 8;
+  string typeOfLegalEntity = 9;
+  string creditScoreBusinessNo = 10;
+  string taxIdNo = 11;
+  int32 yearFounded = 12;
+  int32 financialsDataYear = 13;
+  double revenue = 14;
+  double revenueGrowthCAGR = 15;
+  double netProfit = 16;
+  double netProfitGrowthCAGR = 17;
+  double netProfitPct = 18;
+  double totalAssets = 19;
+  int32 customerDataYear = 20;
+  double customers = 21;
+  double customersGrowthCAGR = 22;
+  int32 peopleDataYear = 23;
+  double employeesTotal = 24;
+  double employeesDiverse = 25;
+  double leadershipTeamTotal = 26;
+  double leadershipTeamDiverse = 27;
+  double leaderDiversityScore = 28;
+  double boardTotal = 29;
+  int32 brandDataYear = 30;
+  string internalId = 31;
+  string parentCompanyInternalId = 32;
+  TenantCompanyRelation tenantCompanyRelation = 33;
+  StimulusScore latestScore = 34;
+  double netPromoterScore = 35;
+  double employeesTotalGrowthCAGR = 36;
+  double revenuePerEmployee = 37;
+  double totalLiabilities = 38;
+  double boardDiverse = 39;
+  double shareholdersEquity = 40;
+  double customersDataYear = 41;
+  string description = 42;
+  repeated string diverseOwnership = 43;
+  double diverseOwnershipPct = 44;
+  string website = 45;
+  string webDomain = 46;
+  string emailDomain = 47;
+  string linkedin = 48;
+  double linkedInFollowers = 49;
+  double linkedInFollowersGrowthCAGR = 50;
+  string facebook = 51;
+  double facebookFollowers = 52;
+  double facebookFollowersGrowthCAGR = 53;
+  string twitter = 54;
+  double twitterFollowers = 55;
+  double twitterFollowersGrowthCAGR = 56;
+  string currency = 57;
+  double assetsRevenueRatio = 58;
+  double liabilitiesRevenueRatio = 59;
+  repeated Tag tags = 60;
+  string logo = 61;
+  string shortDescription = 62;
+  repeated string otherBusinessNames = 63;
+  Options options = 64;
+  repeated string previousBusinessNames = 65;
+  string operatingStatus = 66;
+  double fiscalYearEnd = 67;
+  string leaderDiverse = 68;
+  repeated Industry industries = 69;
+  int32 evaluations = 70;
+  string internalName = 71;
+  repeated Location locationsByIndex = 72;
+  repeated string minorityOwnership = 73;
+  bool smallBusiness = 74;
+  string ownershipDescription = 75;
+  repeated CompanyNames names = 76;
+  string parentCompanyTaxId = 77;
+  repeated Contact contactsByIndex = 78;
+  repeated Certification certificationsByIndex = 79;
+}
+
+message CompanyNames {
+  int32 id = 1;
+  string type = 2;
+  string name = 3;
+}
+message CompanyLocation {
+  string id = 1;
+  string created = 2;
+  string updated = 3;
+  string type = 4;
+  string parentCompany = 5;
+  string legalBusinessName = 6;
+  string doingBusinessAs = 7;
+  string jurisdictionOfIncorporation = 8;
+  string typeOfLegalEntity = 9;
+  string creditScoreBusinessNo = 10;
+  string taxIdNo = 11;
+  int32 yearFounded = 12;
+  int32 financialsDataYear = 13;
+  double revenue = 14;
+  double revenueGrowthCAGR = 15;
+  double netProfit = 16;
+  double netProfitGrowthCAGR = 17;
+  double netProfitPct = 18;
+  double totalAssets = 19;
+  int32 customerDataYear = 20;
+  double customers = 21;
+  double customersGrowthCAGR = 22;
+  int32 peopleDataYear = 23;
+  double employeesTotal = 24;
+  double employeesDiverse = 25;
+  double leadershipTeamTotal = 26;
+  double leadershipTeamDiverse = 27;
+  double leaderDiversityScore = 28;
+  double boardTotal = 29;
+  int32 brandDataYear = 30;
+  string internalId = 31;
+  string parentCompanyInternalId = 32;
+  TenantCompanyRelation tenantCompanyRelation = 33;
+  StimulusScore latestScore = 34;
+  double netPromoterScore = 35;
+  double employeesTotalGrowthCAGR = 36;
+  double revenuePerEmployee = 37;
+  double totalLiabilities = 38;
+  double boardDiverse = 39;
+  double shareholdersEquity = 40;
+  double customersDataYear = 41;
+  string description = 42;
+  string diverseOwnership = 43;
+  double diverseOwnershipPct = 44;
+  string website = 45;
+  string webDomain = 46;
+  string emailDomain = 47;
+  string linkedin = 48;
+  double linkedInFollowers = 49;
+  double linkedInFollowersGrowthCAGR = 50;
+  string facebook = 51;
+  double facebookFollowers = 52;
+  double facebookFollowersGrowthCAGR = 53;
+  string twitter = 54;
+  double twitterFollowers = 55;
+  double twitterFollowersGrowthCAGR = 56;
+  string currency = 57;
+  double assetsRevenueRatio = 58;
+  double liabilitiesRevenueRatio = 59;
+  string tags = 60;
+  string logo = 61;
+  string shortDescription = 62;
+  Options options = 64;
+  string operatingStatus = 66;
+  double fiscalYearEnd = 67;
+  string leaderDiverse = 68;
+  repeated Industry industries = 69;
+  int32 evaluations = 70;
+  string internalName = 71;
+  repeated CompanyNames names = 72;
+  string parentCompanyTaxId = 73;
+}
+
+message StimulusScore {
+  string id = 1;
+  string timestamp = 2;
+  double brandValue = 4;
+  double employeeValue = 5;
+  double customerValue = 6;
+  double longevityValue = 7;
+  double scoreValue = 8;
+  Company company = 9;
+  string timestampFrom = 10;
+  string timestampTo = 11;
+  double quality = 12;
+  double reliability = 13;
+  double features = 14;
+  double cost = 15;
+  double relationship = 16;
+  double financial = 17;
+  double diversity = 18;
+  double innovation = 19;
+  double flexibility = 20;
+  double brand = 21;
+}
+
+message Contact {
+  string id = 1;
+  Company company = 22;
+  string status = 2;
+  string created = 3;
+  string updated = 4;
+  string title = 5;
+  string firstName = 6;
+  string middleName = 7;
+  string lastName = 8;
+  string department = 9;
+  string jobTitle = 10;
+  string addressStreet = 11;
+  string addressStreet2 = 12;
+  string addressStreet3 = 13;
+  string city = 14;
+  string postalCode = 15;
+  string email = 16;
+  string phone = 17;
+  string gender = 18;
+  string language = 19;
+  string manager = 20;
+  string website = 21;
+  string suffix = 23;
+  string state = 24;
+  string addressPostalCode = 25;
+  string country = 26;
+  string emailAlt = 27;
+  string phoneAlt = 28;
+  string fax = 29;
+  string faxAlt = 30;
+  string ethnicity = 31;
+  string languageAlt = 32;
+  string twitter = 33;
+  string linkedin = 34;
+  string internalId = 35;
+  string zip = 36;
+  string latitude = 37;
+  string longitude = 38;
+  string pronouns = 39;
+  string fullName = 40;
+  string sourceName = 41;
+  string sourceDate = 42;
+  string sourceType = 43;
+  string type = 44;
+  string tenantId = 45;
+}
+
+message Product {
+  string id = 1;
+  string status = 2;
+  string created = 3;
+  string updated = 4;
+  string name = 5;
+  string type = 6;
+  Company company = 7;
+  string internalId = 8;
+  string description = 9;
+}
+
+message BadgeTenantCompanyRelationships {
+  string id = 1;
+  string badgeDate = 2;
+  string badgeId = 3;
+  string tenantCompanyRelationshipId = 4;
+}
+
+message Badge {
+  string id = 1;
+  string badgeDateStatus = 2;
+  string badgeDateLabel = 3;
+  string badgeName = 4;
+  string badgeDescription = 5;
+  string created = 6;
+  string updated = 7;
+  Tenant tenant = 8;
+  repeated BadgeTenantCompanyRelationships badgeTenantCompanyRelationships = 9;
+}
+
+
+
+message Certification {
+  string id = 1;
+  string status = 2;
+  string created = 3;
+  string updated = 4;
+  string name = 5;
+  string type = 6;
+  string expirationDate = 7;
+  string certificationDate = 8;
+  string description = 9;
+  Company company = 10;
+  string internalId = 11;
+  string certificationNumber = 12;
+  string issuedBy = 13;
+  bool diversityOwnership = 14;
+}
+
+message Location {
+  string id = 1;
+  string status = 2;
+  string created = 3;
+  string updated = 4;
+  string name = 5;
+  string type = 6;
+  Company company = 7;
+  string addressStreet = 8;
+  string addressStreet2 = 9;
+  string addressStreet3 = 10;
+  string postalCode = 11;
+  string city = 12;
+  string phone = 13;
+  string fax = 14;
+  string state = 15;
+  string country = 16;
+  string description = 17;
+  Contact contact = 18;
+  string internalId = 19;
+  string zip = 20;
+  string latitude = 21;
+  string longitude = 22;
+}
+
+message Insurance {
+  string id = 1;
+  string status = 2;
+  string created = 3;
+  string updated = 4;
+  string name = 5;
+  string type = 6;
+  double coverageLimit = 8;
+  string coverageStart = 9;
+  string coverageEnd = 10;
+  string description = 11;
+  Company company = 12;
+  string internalId = 13;
+  string insurer = 14;
+  string policyNumber = 15;
+}
+
+message NaicsCode {
+  int32 id = 1;
+  string title = 2;
+  string description = 3;
+  string code = 4;
+}
+
+message Industry {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+  string code = 4;
+  NaicsCode naicsCode = 5;
+  string internalId = 6;
+  Company company = 7;
+}
+
+message Tag {
+  string id = 1;
+  string tag = 2;
+  string created = 3;
+}
+
+message Note {
+  int32 id = 1;
+  Note parentNote = 2;
+  string createdBy = 3;
+  string status = 4;
+  string created = 5;
+  string updated = 6;
+  string title = 7;
+  string body = 8;
+  string visibility = 9;
+  string attachments = 10;
+  oneof filterValue {
+    string companyId = 11;
+    Project project = 12;
+    CompanyEvaluation companyEvaluation = 13;
+  }
+}
+
+message Contingency {
+  string id = 1;
+  string status = 2;
+  string created = 3;
+  string updated = 4;
+  string name = 5;
+  string type = 6;
+  string description = 7;
+  Company company = 8;
+  string internalId = 9;
+  string createdDate = 10;
+  string lastUpdateDate = 11;
+}
+
+message DataPoint {
+  string id = 1;
+  string status = 2;
+  string created = 3;
+  string updated = 4;
+  string dataTimeStamp = 5;
+  string dataValue = 6;
+  string dataTrace = 7;
+  string dataSerialId = 8;
+  string dataId = 9;
+  Company company = 10;
+  string element = 11;
+  string internalId = 12;
+  string sourceName = 13;
+  string sourceDate = 14;
+  string sourceType = 15;
+}
+
+
+message Scenario {
+  int32 id = 1;
+  string userId = 2;
+  string created = 3;
+  string updated = 4;
+  string name = 5;
+  bool public = 6;
+}
+
+message TenantCompanyRelation {
+  string id = 1;
+  bool isFavorite = 2;
+  bool isToCompare = 3;
+  string status = 4;
+  string type = 5;
+  Company company = 6;
+  Tenant tenant = 7;
+  int32 noOfProjects = 8;
+  double totalSpent = 9;
+  string internalName = 10;
+  string internalId = 11;
+  int32 supplierTier = 12;
+  string created = 13;
+  int32 noOfEvaluations = 14;
+}
+message ProjectSubsetResponse {
+  repeated ProjectSubset results = 1;
+}
+
+message RelationShipCompanyPanel {
+  ProjectClassificationByStatusResponse projectStatusClassification = 1;
+  ProjectClassificationByCompanyTypeResponse CompanyTypeClassification = 2;
+}
+
+message ProjectClassificationByStatusResponse {
+  ClassificationByStatus results = 1;
+  int32 count = 2;
+}
+
+message ClassificationByStatus {
+  string companyId = 1;
+  int32 NEW = 2;
+  int32 OPEN = 3;
+  int32 INREVIEW = 4;
+  int32 INPROGRESS = 5;
+  int32 COMPLETED = 6;
+  int32 CANCELED = 7;
+}
+message ProjectClassificationByCompanyTypeResponse {
+  ClassificationByCompanyType results = 1;
+  int32 count = 2;
+}
+message ClassificationByCompanyType {
+  string companyId = 1;
+  int32 CONSIDERED = 2;
+  int32 QUALIFIED = 3;
+  int32 SHORTLISTED = 4;
+  int32 AWARDED = 5;
+  int32 CLIENT = 6;
+}
+
+
+message ProjectSubset {
+  int32 id = 1;
+  string title = 2;
+}
+message Project {
+  int32 id = 1;
+  string status = 2;
+  string expectedStartDate = 3;
+  string expectedEndDate = 4;
+  string startDate = 5;
+  string endDate = 6;
+  string title = 7;
+  string description = 8;
+  double contract = 9;
+  string keywords = 11;
+  repeated ProjectCompany projectCompany = 12;
+  int32 continuationOfProject = 13;
+  int32 subProjects = 14;
+  int32 parentProject = 15;
+  string createdBy = 16;
+  bool archived = 17;
+  bool ongoing = 18;
+  bool deleted = 19;
+  double budget = 20;
+  string created = 21;
+  string internalId = 22;
+  repeated string selectionCriteria = 23;
+  string currency = 24;
+  int32 scoreProject = 25;
+  int32 parentProjectTreeId = 26;
+  int32 treeProjectId = 27;
+  repeated Collaborations collaborations = 28;
+}
+
+message Collaborations {
+  string created = 1;
+  string id = 2;
+  string status = 3;
+  string updated = 4;
+  string userId = 5;
+  string UserType = 6;
+}
+
+
+message ProjectCompany {
+  int32 id = 1;
+  string type = 2;
+  string companyId = 3;
+  Company company = 4;
+  Project project = 5;
+  repeated CompanyEvaluation evaluations = 6;
+  repeated CriteriaAnswer criteriaAnswers = 7;
+  repeated ProjectCompany suppliers = 8;
+}
+
+message Event {
+  int32 id = 1;
+  string code = 2;
+  string body = 3;
+  string created = 4;
+  string level = 5;
+  string entityId = 6;
+  string userId = 7;
+  string entityType = 8;
+  EventMeta meta = 9;
+  string userName = 10;
+}
+
+message EventMeta {
+  optional string companyId = 1;
+  optional string projectId = 2;
+  optional string departmentId = 3;
+  optional string companyName = 4;
+  optional string projectName = 5;
+  optional string departmentName = 6;
+  optional string userName = 7;
+  optional string actionType = 8;
+  optional string status = 9;
+  optional string setting = 10;
+  optional bool settingValue = 11;
+  optional string type = 12;
+  repeated MetaUpdate updates = 13;
+  optional string listId = 14;
+  optional string listName = 15;
+  optional string userInvited=16;
+  string answers = 17;
+  string id = 18;
+}
+
+message MetaUpdate {
+  string id = 1;
+  string from = 2;
+  string to = 3;
+}
+
+message SavedSearch {
+  int32 id = 1;
+  string name = 2;
+  string userId = 3;
+  string created = 4;
+  string updated = 5;
+  SearchConfig config = 6;
+  bool public = 7;
+}
+
+message SearchConfig {
+  string query = 1;
+  int32 scoreValueFrom = 2;
+  int32 scoreValueTo = 3;
+  string jurisdictionOfIncorporation = 4;
+  string typeOfLegalEntity = 5;
+  repeated string industries = 6;
+  int32 revenueFrom = 7;
+  int32 revenueTo = 8;
+  int32 employeesFrom = 9;
+  int32 employeesTo = 10;
+  string companyType = 11;
+  string companyStatus = 12;
+  repeated string tags = 13;
+  repeated string diverseOwnership = 14;
+  int32 revenuePerEmployeeFrom = 15;
+  int32 revenuePerEmployeeTo = 16;
+  int32 revenueGrowthFrom = 17;
+  int32 revenueGrowthTo = 18;
+  repeated string relationships = 19;
+  string location = 20;
+  int32 boardTotalFrom = 21;
+  int32 boardTotalTo = 22;
+  int32 leadershipTeamTotalFrom = 23;
+  int32 leadershipTeamTotalTo = 24;
+  int32 netProfitFrom = 25;
+  int32 netProfitTo = 26;
+  int32 netProfitPctFrom = 27;
+  int32 netProfitPctTo = 28;
+  int32 liabilitiesFrom = 29;
+  int32 liabilitiesTo = 30;
+  int32 customersFrom = 31;
+  int32 customersTo = 32;
+  int32 netPromoterScoreFrom = 33;
+  int32 netPromoterScoreTo = 34;
+  int32 twitterFollowersFrom = 35;
+  int32 twitterFollowersTo = 36;
+  int32 linkedInFollowersFrom = 37;
+  int32 linkedInFollowersTo = 38;
+  int32 facebookFollowersFrom = 39;
+  int32 facebookFollowersTo = 40;
+  int32 liabilitiesPctOfRevenueFrom = 41;
+  int32 liabilitiesPctOfRevenueTo = 42;
+  int32 employeesGrowthFrom = 43;
+  int32 employeesGrowthTo = 44;
+  int32 assetsFrom = 45;
+  int32 assetsTo = 46;
+  int32 assetsPctOfRevenueFrom = 47;
+  int32 assetsPctOfRevenueTo = 48;
+  int32 radius = 49;
+  string country = 50;
+  string region = 51;
+  string city = 52;
+  string postalCode = 53;
+  double latitude = 54;
+  double longitude = 55;
+  bool currentLocationIsSet = 56;
+}
+
+message Notification {
+  int32 id = 1;
+  string created = 2;
+  bool read = 3;
+  Event event = 4;
+}
+
+message AccountInfo {
+  int32 active = 2;
+  int32 inactive = 3;
+  int32 archived = 4;
+  int32 total = 5;
+  int32 convertedFromExternal = 6;
+}
+
+message Report {
+  int32 id = 1;
+  string type = 2;
+  string code = 3;
+  string workspaceId = 4;
+  string reportId = 5;
+}
+
+message ReportsResponse {
+  repeated Report reports = 1;
+}
+
+message SharedListResponse {
+  repeated SharedList results = 1;
+}
+
+message SharedList{
+  string id = 1;
+  CompanyList companyList = 2;
+  User user = 3;
+  Tenant tenant = 4;
+  string status = 5;
+  string created = 6;
+  string createdBy = 7;
+}
+
+message EmbedReportPayload {
+  string workspaceId = 1;
+  string reportId = 2;
+}
+
+message EmbedMultipleReportsPayload {
+  string workspaceId = 1;
+  repeated string reportIds = 2;
+}
+
+message EmbedParamsResponse {
+  repeated ReportDetail reportsDetail = 1;
+  EmbedToken embedToken = 2;
+}
+
+message ReportDataPayload {
+  string tenantName = 1;
+}
+
+message ReportData {
+  string accessToken = 1;
+  string embedUrl = 2;
+  string reportPage = 3;
+}
+
+message ReportDataResponse {
+  ReportData reportData = 1;
+}
+
+message EmbedToken {
+  string token = 1;
+  string tokenId = 2;
+  string expiration = 3;
+}
+
+message ReportDetail {
+  string reportId = 1;
+  string reportName = 2;
+  string embedUrl = 3;
+}
+
+message Evaluation {
+  string id = 1;
+  Project project = 2;
+  repeated EvaluationMetric metrics = 3;
+}
+
+message EvaluationMetric {
+  string id = 1;
+  string category = 2;
+  string question = 3;
+  int32 exceptionalValue = 4;
+  int32 metExpectationsValue = 5;
+  int32 unsatisfactoryValue = 6;
+  bool isDefault = 7;
+  string keyId = 8;
+}
+
+message CompanyEvaluation {
+  string id = 1;
+  int32 budgetSpend = 2;
+  ProjectCompany projectCompany = 3;
+
+  int32 quality = 4;
+  int32 reliability = 5;
+  int32 features = 6;
+  int32 cost = 7;
+  int32 relationship = 8;
+  int32 financial = 9;
+  int32 diversity = 10;
+  int32 innovation = 11;
+  int32 flexibility = 12;
+  int32 brand = 13;
+
+  bool submitted = 14;
+  string created = 15;
+  string updated = 16;
+  string createdBy = 17;
+  string description = 18;
+  int32 scoreValue = 19;
+}
+
+enum CompanyProjectType {
+  CONSIDERED = 0;
+  QUALIFIED = 1;
+  SHORTLISTED = 2;
+  AWARDED = 3;
+  CLIENT = 4;
+}
+
+enum GeneralTypeList {
+  ALL = 0;
+  FAVORITE = 1;
+  INTERNAL = 2;
+}
+
+enum ProjectStatus {
+  NEW = 0;
+  OPEN = 1;
+  INREVIEW = 2;
+  INPROGRESS = 3;
+  COMPLETED = 4;
+  CANCELED = 5;
+}
+
+message CompanyList {
+  string id = 1;
+  repeated string companies = 2;
+  string created = 3;
+  string createdBy = 4;
+  string updated = 5;
+  string name = 6;
+  bool isPublic = 7;
+}
+
+message SharedListPayload {
+  string id = 1;
+  string companyId = 2;
+  string userId = 3;
+  Tenant tenant = 4;
+  string createdBy = 5;
+  int32 listId = 6;
+  string listName = 7;
+  string status = 8;
+}
+
+message ExternalUploadNotification {
+  string name = 1;
+  string date = 2;
+  int32 count = 3;
+  string format = 4;
+}
+
+message EmailResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message ExternalUploadNotificationSlack {
+  string customerName = 1;
+  string fileName = 2;
+  string fileUrl = 3;
+  string date = 4;
+  int32 count = 5;
+}
+
+message MicroLoggingAlertRequest {
+  string email = 1;
+  string userAction = 2;
+}
+
+message SlackNotificationResponse {
+  bool success = 1;
+  string message = 2;
+}
+message MicroLoggingAlertResponse {
+  bool success = 1;
+  string error_message = 2;
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "TenantReport",
+    "code": "Tenant",
+    "type": "STANDARD",
+    "pbixFile": "TenantReport.pbix"
+  }
+]

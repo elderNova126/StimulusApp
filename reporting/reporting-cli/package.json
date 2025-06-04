@@ -1,0 +1,81 @@
+{
+  "name": "reporting-cli",
+  "version": "0.0.0",
+  "description": "Report management cli",
+  "author": "",
+  "bin": {
+    "reporting": "./bin/run"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "dependencies": {
+    "@azure/identity": "^2.0.2",
+    "@azure/keyvault-secrets": "^4.3.0",
+    "@oclif/core": "^1",
+    "@oclif/plugin-help": "^5",
+    "@oclif/plugin-plugins": "^2.0.1",
+    "@powerbi-cli/powerbi-cli": "^1.3.3",
+    "dotenv": "^16.0.0",
+    "mssql": "^8.0.2",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@oclif/test": "^2",
+    "@types/chai": "^4",
+    "@types/mocha": "^9.0.0",
+    "@types/mssql": "^7.1.4",
+    "@types/node": "^16.9.4",
+    "@types/shelljs": "^0.8.11",
+    "chai": "^4",
+    "eslint": "^7.32.0",
+    "eslint-config-oclif": "^4",
+    "eslint-config-oclif-typescript": "^1.0.2",
+    "globby": "^11",
+    "mocha": "^9",
+    "oclif": "^2",
+    "shx": "^0.3.3",
+    "ts-node": "^10.2.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "oclif": {
+    "bin": "reporting",
+    "dirname": "reporting",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "upload": {
+        "description": ""
+      },
+      "tenantList": {
+        "description": ""
+      }
+    }
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "yarn lint",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "keywords": [
+    "oclif"
+  ],
+  "types": "dist/index.d.ts"
+}

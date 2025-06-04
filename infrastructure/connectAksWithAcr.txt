@@ -1,0 +1,134 @@
+PS Azure:\> az acr list
+[
+  {
+    "adminUserEnabled": false,
+    "creationDate": "2019-06-13T21:32:11.434761+00:00",
+    "id": "/subscriptions/777b8610-3c04-4c68-b91a-86e0533e7df6/resourceGroups/stimulus-rg/providers/Microsoft.ContainerRegistry/registries/stimulus",
+    "location": "eastus",
+    "loginServer": "stimulus.azurecr.io",
+    "name": "stimulus",
+    "networkRuleSet": null,
+    "policies": {
+      "quarantinePolicy": {
+        "status": "disabled"
+      },
+      "retentionPolicy": {
+        "days": 7,
+        "lastUpdatedTime": null,
+        "status": "disabled"
+      },
+      "trustPolicy": {
+        "status": "disabled",
+        "type": "Notary"
+      }
+    },
+    "provisioningState": "Succeeded",
+    "resourceGroup": "stimulus-rg",
+    "sku": {
+      "name": "Basic",
+      "tier": "Basic"
+    },
+    "status": null,
+    "storageAccount": null,
+    "tags": {},
+    "type": "Microsoft.ContainerRegistry/registries"
+  }
+]
+
+
+PS Azure:\> az aks list
+[
+  {
+    "aadProfile": null,
+    "addonProfiles": {
+      "httpApplicationRouting": {
+        "config": null,
+        "enabled": false,
+        "identity": null
+      },
+      "omsagent": {
+        "config": {
+          "logAnalyticsWorkspaceResourceID": "/subscriptions/777b8610-3c04-4c68-b91a-86e0533e7df6/resourceGroups/DefaultResourceGroup-SCUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-777b8610-3c04-4c68-b91a-86e0533e7df6-SCUS"
+        },
+        "enabled": true,
+        "identity": null
+      }
+    },
+    "agentPoolProfiles": [
+      {
+        "availabilityZones": null,
+        "count": 1,
+        "enableAutoScaling": null,
+        "enableNodePublicIp": null,
+        "maxCount": null,
+        "maxPods": 110,
+        "minCount": null,
+        "name": "agentpool",
+        "nodeLabels": null,
+        "nodeTaints": null,
+        "orchestratorVersion": "1.14.8",
+        "osDiskSizeGb": 100,
+        "osType": "Linux",
+        "provisioningState": "Succeeded",
+        "scaleSetEvictionPolicy": null,
+        "scaleSetPriority": null,
+        "tags": null,
+        "type": "VirtualMachineScaleSets",
+        "vmSize": "Standard_B2s"
+      }
+    ],
+    "apiServerAccessProfile": null,
+    "dnsPrefix": "stimulus-dev-dns",
+    "enablePodSecurityPolicy": null,
+    "enableRbac": true,
+    "fqdn": "stimulus-dev-dns-6ceaf579.hcp.southcentralus.azmk8s.io",
+    "id": "/subscriptions/777b8610-3c04-4c68-b91a-86e0533e7df6/resourcegroups/stimulusdev/providers/Microsoft.ContainerService/managedClusters/stimulus-dev",
+    "identity": null,
+    "identityProfile": null,
+    "kubernetesVersion": "1.14.8",
+    "linuxProfile": null,
+    "location": "southcentralus",
+    "maxAgentPools": 8,
+    "name": "stimulus-dev",
+    "networkProfile": {
+      "dnsServiceIp": "10.0.0.10",
+      "dockerBridgeCidr": "172.17.0.1/16",
+      "loadBalancerProfile": {
+        "allocatedOutboundPorts": null,
+        "effectiveOutboundIps": [
+          {
+            "id": "/subscriptions/777b8610-3c04-4c68-b91a-86e0533e7df6/resourceGroups/MC_stimulusdev_stimulus-dev_southcentralus/providers/Microsoft.Network/publicIPAddresses/61e0c748-f66a-4b5e-831a-6acaaa5f4595",
+            "resourceGroup": "MC_stimulusdev_stimulus-dev_southcentralus"
+          }
+        ],
+        "idleTimeoutInMinutes": null,
+        "managedOutboundIps": {
+          "count": 1
+        },
+        "outboundIpPrefixes": null,
+        "outboundIps": null
+      },
+      "loadBalancerSku": "Standard",
+      "networkPlugin": "kubenet",
+      "networkPolicy": null,
+      "outboundType": "loadBalancer",
+      "podCidr": "10.244.0.0/16",
+      "serviceCidr": "10.0.0.0/16"
+    },
+    "nodeResourceGroup": "MC_stimulusdev_stimulus-dev_southcentralus",
+    "privateFqdn": null,
+    "provisioningState": "Succeeded",
+    "resourceGroup": "stimulusdev",
+    "servicePrincipalProfile": {
+      "clientId": "3d57c6e7-a195-48cb-b3cf-988f9d02e719"
+    },
+    "type": "Microsoft.ContainerService/ManagedClusters",
+    "windowsProfile": null
+  }
+]
+
+az aks update -n stimulus-dev -g stimulusdev --attach-acr stimulus
+
+az aks get-credentials -g stimulusdev -n stimulus-dev
+
+kubectl create secret docker-registry akrcreds --docker-server=stimulus.azurecr.io --docker-username=stimulus --docker-password=+qZsJviq26hq/a9UpOr367foJicXwFiG --docker-email=adrian.furculita@innovatorspark.com

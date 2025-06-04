@@ -1,0 +1,60 @@
+trigger:
+  branches:
+    include:
+      - develop
+      - master
+      - staging
+      - qa
+      - uat
+  paths:
+    include:
+      - infrastructure/adb2c/ui
+    exclude:
+      - deployment
+      - backend-services
+      - frontend-app
+      - reporting
+
+resources:
+  - repo: self
+
+variables:
+  - name: environment
+    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+      value: "prod"
+    ${{ if eq(variables['Build.SourceBranchName'], 'staging') }}:
+      value: "staging"
+    ${{ if eq(variables['Build.SourceBranchName'], 'qa') }}:
+      value: "qa"
+    ${{ if eq(variables['Build.SourceBranchName'], 'develop') }}:
+      value: "dev"
+    ${{ if eq(variables['Build.SourceBranchName'], 'uat') }}:
+      value: "uat"    
+
+
+pool:
+  vmImage: "windows-latest"
+
+steps:
+
+- task: CmdLine@2
+  inputs:
+    script: "echo ${{ variables['Build.SourceBranchName'] }}"
+    
+  displayName: "Check Branch"
+
+- task: CmdLine@2
+  inputs:
+    script: "ls -al"
+    
+  displayName: "List Directories"
+
+- task: AzureFileCopy@2
+  displayName: "Copy Files to Blob"
+  inputs:
+    SourcePath: ./infrastructure/adb2c/ui
+    azureSubscription: 'getstimulus'
+    Destination: 'AzureBlob'
+    storage: "stimulus${{variables.environment}}adb2c"
+    ContainerName: 'adb2cui'
+    BlobPrefix: '/'

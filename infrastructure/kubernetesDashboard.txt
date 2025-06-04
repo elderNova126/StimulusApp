@@ -1,0 +1,8 @@
+https://github.com/kubernetes/dashboard
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc5/aio/deploy/recommended.yaml
+
+https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
+
+kubectl apply -f .\kube-dash-admin-user.yaml
+kubectl apply -f .\kube-dash-ClusterRoleBinding.yaml
